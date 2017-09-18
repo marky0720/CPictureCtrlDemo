@@ -1,9 +1,9 @@
 # CPictureCtrlDemo
 this project reference to 
- A.
- http://partow.net/programming/bitmap/index.html  
- B.
- https://www.codeproject.com/Articles/24969/An-MFC-picture-control-to-dynamically-show-picture?msg=2585137#xx2585137xx
+
+ A. http://partow.net/programming/bitmap/index.html  
+ 
+ B.https://www.codeproject.com/Articles/24969/An-MFC-picture-control-to-dynamically-show-picture?msg=2585137#xx2585137xx
 
 
 2017/09/18
