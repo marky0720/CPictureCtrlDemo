@@ -13,4 +13,4 @@ this project reference to
 
 3.edit bmp key "//marky : edit BMP RGB here" on function EditBmpImage and save into EDIT_RAW_EDIT.bmp
 
-3.correct show bmp by ratio
+3.correct  bmp ratio on display
