@@ -315,6 +315,7 @@ BOOL CPictureCtrl::OnEraseBkgnd(CDC *pDC)
 		//Get control measures
 		RECT rc;
         int left, top, width, height;
+                int pic_width, pic_height;
 		this->GetClientRect(&rc);
 
 		Graphics graphics(pDC->GetSafeHdc());
@@ -323,6 +324,15 @@ BOOL CPictureCtrl::OnEraseBkgnd(CDC *pDC)
 		m_pStream->Seek(liSeekPos, STREAM_SEEK_SET, NULL);
 		Image image(m_pStream);
         GetWindowLocal(&left, &top, &width,&height,rc);
+        //add by marky
+        pic_width = image.GetWidth();
+        pic_height = image.GetHeight();
+        if (pic_width > pic_height) {
+             height = width * pic_height / pic_width;
+        }
+        else {
+            width = height *  pic_width / pic_height;
+        }
 		graphics.DrawImage(&image,left, top, width, height);
 		return TRUE;
 	}
